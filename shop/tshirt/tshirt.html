@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorongstadium</title>
+    <link rel="stylesheet" href="tshirt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+<header class="header">
+    <a href="/home/home.html" class="logo"><img src="/image/logo.jpg" alt=""></a>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <div class="overlay"></div>
+    <nav class="navbar">
+        <span class="close-btn">&times;</span>
+        <a href="/home/home.html" class="active">Home</a>
+        <a href="/about us/about us.html">About Us</a>
+        <a href="/shop/shop.html">Shop</a>
+        <a href="/article/article.html">Article</a>
+        <a href="/gallery/gallery.html">Gallery</a>
+    </nav>
+    <a href="/contact us/contact us.html" class="contact">Contact Us</a>
+</header>
+
+
+<!-- ==== COVER ===== -->
+<div class="cover">
+    <div class="cover-text">
+        <h1>Shop</h1>
+    </div>
+    <div class="cover-img">
+        <img src="/image/shop/shop.png" alt="" srcset="">
+    </div>
+</div>
+
+<div class="items-container">
+    <div class="items-product">
+
+        <!-- IMG PRODUCT -->
+        <div class="slider-box">
+            <button class="btn prev">‹</button>
+            <div class="items-img">
+                <div class="track">
+                    <img src="/image/shop/tshirt-cfl/1.png" alt="">
+                    <img src="/image/shop/tshirt-cfl/2.png" alt="">
+                    <img src="/image/shop/tshirt-cfl/3.png" alt="">
+                    <img src="/image/shop/tshirt-cfl/4.png" alt="">
+                </div>
+            </div>
+            <button class="btn next">›</button>
+        </div>
+
+        <!-- DESK PRODUCT -->
+        <div class="items-desk">
+            <div class="items-tittle">
+                <h1>T-shirt Collective Football Literacy</h1>
+                <h4>IDR 100.000</h4>
+            </div>
+            <div class="items-spek">
+                <p><span class="label">Ready Stock</span><span class="colon">:</span>100 pcs</p>
+                <p><span class="label">Dikirim Dari</span><span class="colon">:</span>Kota Tangerang</p>
+                <p><span class="label">Material</span><span class="colon">:</span>Cotton Combed 20s</p>
+                <p><span class="label"></span><span class="colon">:</span>Sablon Plastisol Ink</p>
+                <p><span class="label">Warna</span><span class="colon">:</span>Putih</p>
+                
+            </div>
+            <div class="desk-tittle">
+                <h1>Deskripsi Produk</h1>
+            </div>
+            <div class="desk-produk">
+                <p>
+                    <b>Vwear.obsessed x Lorongstadium – Collective Football Literacy</b>
+                    </br>
+                    </br>
+                    Kolaborasi ini lahir dari satu kesamaan visi: bahwa tribun bukan hanya soal nyanyian,
+                    flare, dan koreografi — tapi juga soal kesadaran, pengetahuan, dan gerakan kolektif.
+                    </br>
+                    </br>
+                    Lorongstadium dikenal sebagai ruang bertemunya para pecinta sepakbola yang tak hanya
+                    mendukung dari sisi emosional, tapi juga lewat pemahaman, diskusi, dan kegiatan literasi.
+                    Dari zine, buku, hingga forum baca, Lorongstadium menghidupkan budaya baru di kalangan
+                    supporter: berpikir, membaca, dan bergerak bersama.
+                    </br>
+                    </br>
+                    Sementara vwear.obsessed hadir sebagai medium ekspresi visual. Lewat desain yang
+                    merepresentasikan semangat tribun, kolektif, dan perlawanan budaya pop yang dangkal,
+                    kolaborasi ini menjadikan kaos bukan sekadar fashion — tapi juga pernyataan sikap dan identitas.
+                    </br>
+                    </br>
+                    <b>Terms & Conditions</b>
+                    </br>
+                    </br>
+                    - Pengiriman dilakukan maksimal 2x24 jam setelah pembayaran.
+                    </br>
+                    - Pastikan ukuran dan warna yang dipesan sudah sesuai.
+                    </br>
+                    - Pengembalian barang atau dana dapat dilakukan 3 hari setelah paket diterima apabila
+                    terdapat kesalahan dari pihak kami.
+                    </br>
+                    - Harap sertakan video unboxing untuk klaim komplain produk.
+                    </br>
+                    </br>
+                    </br>
+                    Best Seller, Vwear.obsessed x Lorongstadium! Dapatkan sekarang sebelum kehabisan!
+                    </br>
+                    </br>
+                    </br>
+                    #VWEAR.OBSESSED #FootballBrigade #FootballCulture
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORM PRODUCT -->
+    <div class="form">
+        <div class="container">
+        <label>Nama Lengkap</label>
+        <input type="text" id="nama"/>
+        <label>No Telp</label>
+        <input type="text" id="telp"/>
+        <label>Email</label>
+        <input type="email" id="email"/>
+
+        <label>Pilih Ukuran</label>
+        <select id="ukuran">
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+
+        <label>Jumlah Qty</label>
+        <select id="qty" onchange="hitungHarga()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <label>Provinsi</label>
+        <select id="provinsi" onchange="updateKota()"></select>
+        <label>Kota / Kabupaten</label>
+        <select id="kota" onchange="updateKecamatan()"></select>
+        <label>Kecamatan</label>
+        <select id="kecamatan" onchange="updateKelurahan()"></select>
+        <label>Kelurahan</label>
+        <select id="kelurahan" onchange="updateKodePos()"></select>
+        <label>Alamat Lengkap</label>
+        <textarea id="alamat"></textarea>
+        <label>Pesan</label>
+        <textarea id="pesan"></textarea>
+        <label>Harga</label>
+        <input type="text" id="harga" disabled />
+
+        <div class="button">
+            <a href="#" id="kirim">Beli Sekarang</a>
+        </div>
+    </div> 
+</div>
+</div>
+
+
+<!-- ==== FOOTER ==== -->
+ <div class="footer-container">
+    <div class="footer-icon">
+        <a href="https://instagram.com/lorongstadium"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://ivanfkri76@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://x.com/lorongstadium"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <div class="footer-tag">
+        <a href="/home/home.html">Home</a>
+        <a href="/article/article.html">Article</a>
+        <a href="/about us/about us.html">About Us</a>
+        <a href="/contact us/contact us.html">Contact Us</a>
+    </div>
+    <div class="footer-wm">
+        <p>© LORONGSTADIUM 2024. All rigths reserved.</p>
+    </div>
+ </div>
+
+ <script src="/shop/tshirt/tshirt.js"></script>
+
+</body>
+</html>

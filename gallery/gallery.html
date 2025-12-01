@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorongstadium</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+<header class="header">
+    <a href="/home/home.html" class="logo"><img src="/image/logo.jpg" alt=""></a>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <div class="overlay"></div>
+    <nav class="navbar">
+        <span class="close-btn">&times;</span>
+        <a href="/home/home.html" class="active">Home</a>
+        <a href="/about us/about us.html">About Us</a>
+        <a href="/shop/shop.html">Shop</a>
+        <a href="/article/article.html">Article</a>
+        <a href="/gallery/gallery.html">Gallery</a>
+    </nav>
+    <a href="/contact us/contact us.html" class="contact">Contact Us</a>
+</header>
+
+
+<!-- ==== COVER ===== -->
+<div class="cover">
+    <div class="cover-text">
+        <h1>Gallery</h1>
+    </div>
+    <div class="cover-img">
+        <img src="/image/article/2.png" alt="" srcset="">
+    </div>
+</div>
+
+
+<!-- ==== GALLERY ==== -->
+<div class="gallery-judul">
+    <h1>Our Gallery</h1>
+</div>
+
+<div class="gallery-container">
+    <div class="gallery">
+        <img src="/image/gallery/1.png" onclick="openPopup(this.src)">
+    </div>
+    <div class="gallery">
+        <img src="/image/gallery/2.png" onclick="openPopup(this.src)">
+    </div>
+    <div class="gallery">
+        <img src="/image/gallery/3.png" onclick="openPopup(this.src)">
+    </div>
+    <div class="gallery">
+        <img src="/image/gallery/4.png" onclick="openPopup(this.src)">
+    </div>
+    <div class="gallery">
+        <img src="/image/gallery/5.png" onclick="openPopup(this.src)">
+    </div>
+    <div class="gallery">
+        <img src="/image/gallery/6.png" onclick="openPopup(this.src)">
+    </div>
+</div>
+
+<!-- ==== POPUP ==== -->
+<div class="popup" id="popup">
+    <span class="close-popup" onclick="closePopup()">&times;</span>
+    <img id="popup-img" src="" alt="">
+</div>
+
+
+    <!-- ==== FOOTER ==== -->
+ <div class="footer-container">
+    <div class="footer-icon">
+        <a href="https://instagram.com/lorongstadium"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://ivanfkri76@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://x.com/lorongstadium"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <div class="footer-tag">
+        <a href="/home/home.html">Home</a>
+        <a href="/article/article.html">Article</a>
+        <a href="/about us/about us.html">About Us</a>
+        <a href="/contact us/contact us.html">Contact Us</a>
+    </div>
+    <div class="footer-wm">
+        <p>© LORONGSTADIUM 2024. All rigths reserved.</p>
+    </div>
+ </div>
+
+ <script src="gallery.js"></script>
+
+</body>
+</html>

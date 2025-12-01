@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorongstadium</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+<header class="header">
+    <a href="/home/home.html" class="logo"><img src="/image/logo.jpg" alt=""></a>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <div class="overlay"></div>
+    <nav class="navbar">
+        <span class="close-btn">&times;</span>
+        <a href="/home/home.html" class="active">Home</a>
+        <a href="/about us/about us.html">About Us</a>
+        <a href="/shop/shop.html">Shop</a>
+        <a href="/article/article.html">Article</a>
+        <a href="/gallery/gallery.html">Gallery</a>
+    </nav>
+    <a href="/contact us/contact us.html" class="contact">Contact Us</a>
+</header>
+
+
+    <!-- ==== IMAGE SLIDER ==== -->
+    <div class="slider">
+        <div class="slider-text">
+            <p>Welcome To Our Site</p>
+            <h1>LORONGSTADIUM</h1>
+        </div>
+
+        <div class="slides">
+            <img src="/image/cover/1.png" class="slide active">
+            <img src="/image/cover/2.png" class="slide">
+            <img src="/image/cover/3.png" class="slide">
+            <img src="/image/cover/4.png" class="slide">
+            <img src="/image/cover/5.png" class="slide">
+        </div>
+    </div>
+
+
+    <!-- ==== ABOUT US ==== -->
+     <div class="aboutus-container">
+        <div class="aboutus-logo">
+            <img src="/image/logo.jpg" alt="">
+        </div>
+        <div class="aboutus-judul">
+            <h1>About Us</h1>
+        <p>
+            LorongStadium adalah komunitas literasi yang berfokus pada keterkaitan antara sepakbola
+            dan isu sosial. Melalui tulisan, diskusi, dan berbagai proyek kolaboratif, kami menghadirkan
+            cerita tentang budaya, komunitas, identitas suporter, serta realitas sosial yang tercermin
+            dalam dunia sepakbola. Kami berupaya membangun ruang inklusif bagi penulis, suporter, dan
+            pegiat sosial untuk berbagi perspektif, memicu dialog, dan menjadikan literasi sebagai alat
+            pemahaman serta perubahan positif.
+        </p>
+        </div>
+     </div>
+
+
+     <!-- ==== MERCHANDISE ==== -->
+<div class="merch-container">
+        <h1>Our Shop</h1>
+    <div class="slider-container">
+        <div class="slider-track">
+            <div class="merch-content">
+                <div class="merch-img">
+                    <img src="/image/shop/flare/1.png" alt="">
+                </div>
+                <div class="merch-price">
+                    <h1>Red Flare DNS</h1>
+                    <p>IDR 60.000,00</p>
+                </div>
+                <div class="price">
+                    <a href="/shop/flare/flare.html"><h3>Buy Now</h3></a>
+                    <div class="rating">
+                        <h5><i class="fa-solid fa-star"></i></h5>
+                        <p>4.8</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="merch-content">
+                <div class="merch-img">
+                    <img src="/image/shop/tshirt-cfl/1.png" alt="">
+                </div>
+                <div class="merch-price">
+                    <h1>T-shirt CFL</h1>
+                    <p>IDR 100.000,00</p>
+                </div>
+                <div class="price">
+                    <a href="/shop/tshirt/tshirt.html"><h3>Buy Now</h3></a>
+                    <div class="rating">
+                        <h5><i class="fa-solid fa-star"></i></h5>
+                        <p>4.8</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="merch-content">
+                <div class="merch-img">
+                    <img src="/image/shop/sticker-pack/1.png" alt="">
+                </div>
+                <div class="merch-price">
+                    <h1>Sticker Pack</h1>
+                    <p>IDR 15.000,00</p>
+                </div>
+                <div class="price">
+                    <a href="/shop/sticker/sticker.html"><h3>Buy Now</h3></a>
+                    <div class="rating">
+                        <h5><i class="fa-solid fa-star"></i></h5>
+                        <p>4.8</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="btn-grup">
+            <button class="btn left" onclick="leftSlide()">&#10094;</button>
+            <button class="btn right" onclick="rightSlide()">&#10095;</button>
+        </div>
+</div>
+
+
+
+    <!-- ==== ARTIKEL ==== -->
+    <div class="artikel-container">
+        <div class="artikel">
+            <h1>Our Article</h1>
+        </div>
+        <div class="artikel-wrap">
+            <div class="artikel-content">
+                <div class="artikel-cover">
+                    <img src="/image/article/1.png" alt="">
+                </div>
+                <div class="artikel-judul">
+                    <a href="/article/september-yang-sangat-amat-jolly/6.html"><h1 data-id="artikel6">September Yang Sangat Amat Jolly</h1></a>
+                    <p>Ada yang berbeda dengan September kali ini.
+                        Bukan karena daun mulai gugur atau hujan yang datang tak tentu, tapi karena senyum...</p>
+                </div>
+                <div class="artikel-date">
+                    <p>9 Oktober 2025</p>
+                    <div class="artikel-pengunjung" data-id="artikel6">
+                        <h5><i class="fa-solid fa-eye"></i></h5>
+                        <p>0</p>
+                    </div>
+                    <div class="artikel-share">
+                        <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
+                        <p>Share</p>
+                    </div>
+                </div>
+            </div>
+            <div class="artikel-content">
+                <div class="artikel-cover">
+                    <img src="/image/article/2.png" alt="">
+                </div>
+                <div class="artikel-judul">
+                    <a href="/article/september-hitam-bukti-dari-lahirnya-sejarah-kelam/5.html"><h1 data-id="artikel5">September Hitam -  Bukti Dari Lahirnya Sejarah Kelam</h1></a>
+                    <p>September selalu datang dengan wajah muram. Bulan ini bukan hanya penanda pergantian musim, tapi juga...</p>
+                </div>
+                <div class="artikel-date">
+                    <p>7 September 2025</p>
+                    <div class="artikel-pengunjung" data-id="artikel5">
+                        <h5><i class="fa-solid fa-eye"></i></h5>
+                        <p>0</p>
+                    </div>
+                    <div class="artikel-share">
+                        <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
+                        <p>Share</p>
+                    </div>
+                </div>
+            </div>
+            <div class="artikel-content">
+                <div class="artikel-cover">
+                    <img src="/image/article/3.png" alt="">
+                </div>
+                <div class="artikel-judul">
+                    <a href="/article/menunggu-menuju -arena-pertempuran/4.html"><h1 data-id="artikel4">Menunggu Menuju Arena Pertempuran</h1></a>
+                    <p>Sudah berjalan hampir 2 bulan, tampak tak terasa bahwa kita sudah berada
+                    di ruangan yang berbeda. Persib yang biasanya menjadi lawan tangguh...</p>
+                </div>
+                <div class="artikel-date">
+                    <p>25 Juli 2025</p>
+                    <div class="artikel-pengunjung" data-id="artikel4">
+                        <h5><i class="fa-solid fa-eye"></i></h5>
+                        <p>0</p>
+                    </div>
+                    <div class="artikel-share">
+                        <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
+                        <p>Share</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </br>
+        </br>
+        <div class="artikel-wrap">
+            <div class="artikel-content">
+                <div class="artikel-cover">
+                    <img src="/image/article/4.png" alt="">
+                </div>
+                <div class="artikel-judul">
+                    <a href="/article/aku-ingin-mencintai-pss-sleman-dengan-tidak-sederhana/3.html"><h1 data-id="artikel3">Aku Ingin Mencintai PSS Sleman Dengan Tidak Sederhana</h1></a>
+                    <p>Aku masih ingat, di mana saat aku membaca sebuah puisi karangan Pak Sapardi:</p>
+                </div>
+                <div class="artikel-date">
+                    <p>10 Juli 2025</p>
+                    <div class="artikel-pengunjung" data-id="artikel3">
+                        <h5><i class="fa-solid fa-eye"></i></h5>
+                        <p>0</p>
+                    </div>
+                    <div class="artikel-share">
+                        <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
+                        <p>Share</p>
+                    </div>
+                </div>
+            </div>
+            <div class="artikel-content">
+                <div class="artikel-cover">
+                    <img src="/image/article/5.png" alt="">
+                </div>
+                <div class="artikel-judul">
+                    <a href="/article/membisu/2.html"><h1 data-id="artikel2">Membisu</h1></a>
+                    <p>Sudah lebih dari 30 hari PSS terdegradasi ke liga 2, namun masih saja berlarut
+                        dengan kesedihan. Kenangan di liga 1, masih saja terbersit dalam pikiran angan-angan...</p>
+                </div>
+                <div class="artikel-date">
+                    <p>24 Juni 2025</p>
+                    <div class="artikel-pengunjung" data-id="artikel2">
+                        <h5><i class="fa-solid fa-eye"></i></h5>
+                        <p>0</p>
+                    </div>
+                    <div class="artikel-share">
+                        <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
+                        <p>Share</p>
+                    </div>
+                </div>
+            </div>
+            <div class="artikel-content">
+                <div class="artikel-cover">
+                    <img src="/image/article/6.png" alt="">
+                </div>
+                <div class="artikel-judul">
+                    <a href="/article/merapal-kekuatan-untuk-musim-depan/1.html"><h1 data-id="artikel1">Merapal Kekuatan Untuk Musim Depan</h1></a>
+                    <p>5 musim PSS Sleman bergelut dengan pedihnya kenyataan di liga 1.
+                        Kekalahan-kekalahan pahit di laga kandang maupun tandang...</p>
+                </div>
+                <div class="artikel-date">
+                    <p>9 Juni 2025</p>
+                    <div class="artikel-pengunjung" data-id="artikel1">
+                        <h5><i class="fa-solid fa-eye"></i></h5>
+                        <p>0</p>
+                    </div>
+                    <div class="artikel-share">
+                        <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
+                        <p>Share</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="artikel-button">
+            <a href="/article/article.html"><h2>Read More</h2></a>
+        </div>
+    </div>
+
+
+    <!-- ==== POPUP SHARE COVER ==== -->
+<div id="sharePopup" class="share-popup-overlay">
+    <div class="share-popup-box">
+
+        <span id="closePopup" class="share-popup-close">&times;</span>
+
+        <h2>Bagikan Artikel</h2>
+
+        <div class="share-list">
+            <a id="shareWA" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            <a id="shareFB" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a id="shareTW" target="_blank"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+        </div>
+
+        <div class="share-copy">
+            <input type="text" id="shareLink" readonly>
+            <button id="copyBtn">Copy</button>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ==== GALLERY ==== -->
+<div class="gallery-judul">
+        <h1>Our Gallery</h1>
+<div class="gallery-container">
+    <div class="gallery-wrapper">
+        <div class="gallery-content">
+
+    <!-- ORIGINAL IMAGES -->
+    <div class="gallery"><img src="/image/gallery/1.png"></div>
+    <div class="gallery"><img src="/image/gallery/2.png"></div>
+    <div class="gallery"><img src="/image/gallery/3.png"></div>
+    <div class="gallery"><img src="/image/gallery/4.png"></div>
+    <div class="gallery"><img src="/image/gallery/5.png"></div>
+    <div class="gallery"><img src="/image/gallery/6.png"></div>
+
+    <!-- DUPLICATE (for smooth infinite) -->
+    <div class="gallery"><img src="/image/gallery/1.png"></div>
+    <div class="gallery"><img src="/image/gallery/2.png"></div>
+    <div class="gallery"><img src="/image/gallery/3.png"></div>
+    <div class="gallery"><img src="/image/gallery/4.png"></div>
+    <div class="gallery"><img src="/image/gallery/5.png"></div>
+    <div class="gallery"><img src="/image/gallery/6.png"></div>
+
+</div>
+
+    </div>
+    <div class="arrow-group">
+        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+    </div>
+</div>
+</div>
+
+
+<!-- ==== POPUP ==== -->
+<div class="popup" id="popup">
+    <span class="close-popup" onclick="closePopup()">&times;</span>
+    <img id="popup-img" src="" alt="">
+</div>
+
+
+<!-- ==== FOOTER ==== -->
+ <div class="footer-container">
+    <div class="footer-icon">
+        <a href="https://instagram.com/lorongstadium"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://ivanfkri76@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://x.com/lorongstadium"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <div class="footer-tag">
+        <a href="/home/home.html">Home</a>
+        <a href="/article/article.html">Article</a>
+        <a href="/about us/about us.html">About Us</a>
+        <a href="/contact us/contact us.html">Contact Us</a>
+    </div>
+    <div class="footer-wm">
+        <p>© LORONGSTADIUM 2024. All rigths reserved.</p>
+    </div>
+ </div>
+
+
+
+<!-- Font Awesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

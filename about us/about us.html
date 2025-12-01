@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorongstadium</title>
+    <link rel="stylesheet" href="about us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+<header class="header">
+    <a href="/home/home.html" class="logo"><img src="/image/logo.jpg" alt=""></a>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <div class="overlay"></div>
+    <nav class="navbar">
+        <span class="close-btn">&times;</span>
+        <a href="/home/home.html" class="active">Home</a>
+        <a href="/about us/about us.html">About Us</a>
+        <a href="/shop/shop.html">Shop</a>
+        <a href="/article/article.html">Article</a>
+        <a href="/gallery/gallery.html">Gallery</a>
+    </nav>
+    <a href="/contact us/contact us.html" class="contact">Contact Us</a>
+</header>
+
+
+<!-- ==== COVER ===== -->
+<div class="cover">
+    <div class="cover-text">
+        <h1>About Us</h1>
+    </div>
+    <div class="cover-img">
+        <img src="/image/cover/1.png" alt="" srcset="">
+    </div>
+</div>
+
+
+<!-- ===== ABOUT US ===== -->
+<div class="aboutus-container">
+    <div class="aboutus-left">
+        <div class="aboutus-logo">
+            <img src="/image/logo.jpg" alt="">
+        </div>
+    </div>
+    <div class="aboutus-right">
+        <div class="aboutus-tittle">
+            <h1>About Us</h1>
+            <p>
+                Lorongstadium adalah komunitas literasi yang berfokus pada keterkaitan antara sepakbola
+                dan isu sosial. Melalui tulisan, diskusi, dan berbagai proyek kolaboratif, kami menghadirkan
+                cerita tentang budaya, komunitas, identitas suporter, serta realitas sosial yang tercermin
+                dalam dunia sepakbola. Kami berupaya membangun ruang inklusif bagi penulis, suporter, dan
+                pegiat sosial untuk berbagi perspektif, memicu dialog, dan menjadikan literasi sebagai alat
+                pemahaman serta perubahan positif.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- ==== FOOTER ==== -->
+ <div class="footer-container">
+    <div class="footer-icon">
+        <a href="https://instagram.com/lorongstadium"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://ivanfkri76@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://x.com/lorongstadium"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <div class="footer-tag">
+        <a href="/home/home.html">Home</a>
+        <a href="/article/article.html">Article</a>
+        <a href="/about us/about us.html">About Us</a>
+        <a href="/contact us/contact us.html">Contact Us</a>
+    </div>
+    <div class="footer-wm">
+        <p>© LORONGSTADIUM 2024. All rigths reserved.</p>
+    </div>
+ </div>
+
+ <script>
+    window.addEventListener("scroll", function () {
+    const header = document.querySelector(".header");
+    if (window.scrollY > 10) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+
+/////////
+const menuToggle = document.getElementById("menu-toggle");
+    const overlay = document.querySelector(".overlay");
+    const closeBtn = document.querySelector(".close-btn");
+
+    // klik overlay tutup menu
+    overlay.addEventListener("click", () => {
+        menuToggle.checked = false;
+    });
+
+    // klik tombol silang tutup menu
+    closeBtn.addEventListener("click", () => {
+        menuToggle.checked = false;
+    });
+ </script>
+
+
+</body>
+</html>

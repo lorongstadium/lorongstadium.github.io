@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorongstadium</title>
+    <link rel="stylesheet" href="sticker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+<header class="header">
+    <a href="/home/home.html" class="logo"><img src="/image/logo.jpg" alt=""></a>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <div class="overlay"></div>
+    <nav class="navbar">
+        <span class="close-btn">&times;</span>
+        <a href="/home/home.html" class="active">Home</a>
+        <a href="/about us/about us.html">About Us</a>
+        <a href="/shop/shop.html">Shop</a>
+        <a href="/article/article.html">Article</a>
+        <a href="/gallery/gallery.html">Gallery</a>
+    </nav>
+    <a href="/contact us/contact us.html" class="contact">Contact Us</a>
+</header>
+
+
+<!-- ==== COVER ===== -->
+<div class="cover">
+    <div class="cover-text">
+        <h1>Shop</h1>
+    </div>
+    <div class="cover-img">
+        <img src="/image/shop/shop.png" alt="" srcset="">
+    </div>
+</div>
+
+<div class="items-container">
+    <div class="items-product">
+
+        <!-- IMG PRODUCT -->
+        <div class="slider-box">
+            <button class="btn prev">‹</button>
+            <div class="items-img">
+                <div class="track">
+                    <img src="/image/shop/sticker-pack/1.png" alt="">
+                    <img src="/image/shop/sticker-pack/2.png" alt="">
+                    <img src="/image/shop/sticker-pack/3.png" alt="">
+                    <img src="/image/shop/sticker-pack/4.png" alt="">
+                    <img src="/image/shop/sticker-pack/5.png" alt="">
+                    <img src="/image/shop/sticker-pack/6.png" alt="">
+                </div>
+            </div>
+            <button class="btn next">›</button>
+        </div>
+
+        <!-- DESK PRODUCT -->
+        <div class="items-desk">
+            <div class="items-tittle">
+                <h1>Sticker Pack Lorongstadium</h1>
+                <h4>IDR 15.000</h4>
+            </div>
+            <div class="items-spek">
+                <p><span class="label">Ready Stock</span><span class="colon">:</span>500 pcs</p>
+                <p><span class="label">Dikirim Dari</span><span class="colon">:</span>Kota Tangerang</p>
+                <p><span class="label">Material</span><span class="colon">:</span>Vinyl Glossy</p>
+                <p><span class="label"></span><span class="colon">:</span>Die Cut</p>
+                <p><span class="label">Jumlah</span><span class="colon">:</span>1 Pack isi 5 pcs</p>
+                
+            </div>
+            <div class="desk-tittle">
+                <h1>Deskripsi Produk</h1>
+            </div>
+            <div class="desk-produk">
+                <p>
+                    Lebih dari sekadar stiker, ini adalah simbol gerakan. Lorongstadium merepresentasikan
+                    komunitas supporter sepakbola yang tidak hanya bersuara di tribun, tapi juga bergerak
+                    melalui bacaan, diskusi, dan literasi kolektif.
+                    </br>
+                    </br>
+                    Dicetak menggunakan bahan vinyl glossy berkualitas tinggi yang tahan air, tidak mudah
+                    luntur, dan mengilap, serta sudah dipotong (die-cut) sehingga siap ditempel di laptop,
+                    botol minum, motor, helm, atau dinding favoritmu.
+                    </br>
+                    </br>
+                    Sticker Lorongstadium juga menjadi penanda identitas bagi supporter yang melihat
+                    sepakbola sebagai ruang budaya dan pengetahuan. Setiap tempelan adalah bentuk sikap
+                    bahwa dari tribun hingga ruang baca, semangat kolektif, diskusi, dan kesadaran akan
+                    terus digelorakan bersama.
+                    </br>
+                    </br>
+                    <b>Terms & Conditions</b>
+                    </br>
+                    </br>
+                    - Pengiriman dilakukan maksimal 2x24 jam setelah pembayaran.
+                    </br>
+                    - Pastikan pesanan yang dipesan sudah sesuai.
+                    </br>
+                    - Pengembalian barang atau dana dapat dilakukan 3 hari setelah paket diterima apabila
+                    terdapat kesalahan dari pihak kami.
+                    </br>
+                    - Harap sertakan video unboxing untuk klaim komplain produk.
+                    </br>
+                    </br>
+                    </br>
+                    Best Seller, Lorongstadium! Dapatkan sekarang sebelum kehabisan!
+                    </br>
+                    </br>
+                    </br>
+                    #Lorongstadium #FootballBrigade #FootballCulture
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORM PRODUCT -->
+    <div class="form">
+        <div class="container">
+        <label>Nama Lengkap</label>
+        <input type="text" id="nama"/>
+        <label>No Telp</label>
+        <input type="text" id="telp"/>
+        <label>Email</label>
+        <input type="email" id="email"/>
+
+        <label>Jumlah Qty</label>
+        <select id="qty" onchange="hitungHarga()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <label>Provinsi</label>
+        <select id="provinsi" onchange="updateKota()"></select>
+        <label>Kota / Kabupaten</label>
+        <select id="kota" onchange="updateKecamatan()"></select>
+        <label>Kecamatan</label>
+        <select id="kecamatan" onchange="updateKelurahan()"></select>
+        <label>Kelurahan</label>
+        <select id="kelurahan" onchange="updateKodePos()"></select>
+        <label>Alamat Lengkap</label>
+        <textarea id="alamat"></textarea>
+        <label>Pesan</label>
+        <textarea id="pesan"></textarea>
+        <label>Harga</label>
+        <input type="text" id="harga" disabled />
+
+        <div class="button">
+            <a href="#" id="kirim">Beli Sekarang</a>
+        </div>
+    </div> 
+</div>
+</div>
+
+
+<!-- ==== FOOTER ==== -->
+ <div class="footer-container">
+    <div class="footer-icon">
+        <a href="https://instagram.com/lorongstadium"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://ivanfkri76@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://x.com/lorongstadium"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+    <div class="footer-tag">
+        <a href="/home/home.html">Home</a>
+        <a href="/article/article.html">Article</a>
+        <a href="/about us/about us.html">About Us</a>
+        <a href="/contact us/contact us.html">Contact Us</a>
+    </div>
+    <div class="footer-wm">
+        <p>© LORONGSTADIUM 2024. All rigths reserved.</p>
+    </div>
+ </div>
+
+ <script src="/shop/sticker/sticker.js"></script>
+
+</body>
+</html>
