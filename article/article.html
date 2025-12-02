@@ -11,13 +11,13 @@
 
     <!-- HEADER -->
 <header class="header">
-    <a href="index.html" class="logo"><img src="/image/logo.jpg" alt=""></a>
+    <a href="https://lorongstadium.github.io/index.html" class="logo"><img src="/image/logo.jpg" alt=""></a>
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <div class="overlay"></div>
     <nav class="navbar">
         <span class="close-btn">&times;</span>
-        <a href="index.html" class="active">Home</a>
+        <a href="https://lorongstadium.github.io/index.html" class="active">Home</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/shop/shop.html">Shop</a>
         <a href="/article/article.html">Article</a>
@@ -184,7 +184,7 @@
         <a href="https://x.com/lorongstadium"><i class="fa-brands fa-x-twitter"></i></a>
     </div>
     <div class="footer-tag">
-        <a href="index.html">Home</a>
+        <a href="https://lorongstadium.github.io/index.html">Home</a>
         <a href="/article/article.html">Article</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/contact us/contact us.html">Contact Us</a>
@@ -194,67 +194,6 @@
     </div>
  </div>
 
- <script>
-    window.addEventListener("scroll", function () {
-    const header = document.querySelector(".header");
-    if (window.scrollY > 10) {
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
-    }
-});
-
-/////////
-const menuToggle = document.getElementById("menu-toggle");
-    const overlay = document.querySelector(".overlay");
-    const closeBtn = document.querySelector(".close-btn");
-
-    // klik overlay tutup menu
-    overlay.addEventListener("click", () => {
-        menuToggle.checked = false;
-    });
-
-    // klik tombol silang tutup menu
-    closeBtn.addEventListener("click", () => {
-        menuToggle.checked = false;
-    });
-
-
-    
-
-
-    document.addEventListener("DOMContentLoaded", function(){
-
-  const titles = document.querySelectorAll(".artikel-judul h1");
-
-  titles.forEach(function(title){
-
-    const id = title.dataset.id;
-    const viewBox = document.querySelector('.artikel-pengunjung[data-id="' + id + '"]');
-    const counter = viewBox.querySelector("p");
-
-    // Ambil data tersimpan
-    let count = localStorage.getItem("view-" + id);
-
-    if(count === null){
-        count = 0;
-    } else {
-        count = parseInt(count);
-    }
-
-    // Tampilkan ke layar
-    counter.textContent = count;
-
-    // Saat judul diklik
-    title.addEventListener("click", function(){
-        count++;
-        localStorage.setItem("view-" + id, count);
-        counter.textContent = count;
-    });
-
-  });
-
-});
-</script>
+ <script src="article.js"></script>
 </body>
 </html>
