@@ -358,7 +358,7 @@ input, textarea {
 
 input.error, textarea.error {
     border: 2px solid #ff4b4b;
-    background: #3c1f1f;
+    background: #363062;
 }
 
 button {

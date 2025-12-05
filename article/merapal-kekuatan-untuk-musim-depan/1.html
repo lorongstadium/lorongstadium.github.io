@@ -11,13 +11,13 @@
 
     <!-- HEADER -->
 <header class="header">
-    <a href="https://lorongstadium.github.io/index.html" class="logo"><img src="/image/logo.jpg" alt=""></a>
+    <a class="go-home logo"><img src="/image/logo.jpg" alt=""></a>
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <div class="overlay"></div>
     <nav class="navbar">
         <span class="close-btn">&times;</span>
-        <a href="https://lorongstadium.github.io/index.html" class="active">Home</a>
+        <a class="go-home active">Home</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/shop/shop.html">Shop</a>
         <a href="/article/article.html">Article</a>
@@ -39,7 +39,10 @@
 
 <div class="canvas-container">
         <div class="canvas-article">
-            <h1>Menunggu Menuju Arena Pertempuran</h1>
+            <div class="canvas-article-img">
+                <img src="/image/article/6.png" alt="">
+            </div>
+            <h1>Merapal Kekuatan Untuk Musim Depan</h1>
             <p>
                 5 musim PSS Sleman bergelut dengan pedihnya kenyataan di liga 1. Kekalahan-kekalahan
                 pahit di laga kandang maupun tandang, menjadi bukti PSS Sleman terjebak dalam
@@ -74,7 +77,7 @@
                         <b><i>Semoga kita hanya sebentar di liga 2, ya.</i></b>
                     </p>
                 </div>
-                </br></br>
+                
                 <div class="wm">
                     <i>
                         Ditulis oleh: Ivan
@@ -142,7 +145,7 @@
         <a href="https://x.com/lorongstadium"><i class="fa-brands fa-x-twitter"></i></a>
     </div>
     <div class="footer-tag">
-        <a href="https://lorongstadium.github.io/index.html">Home</a>
+        <a class="go-home">Home</a>
         <a href="/article/article.html">Article</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/contact us/contact us.html">Contact Us</a>
@@ -205,6 +208,23 @@ const menuToggle = document.getElementById("menu-toggle");
             toast.classList.remove("show");
         }, 2000);
     };
+
+
+
+    const artikelID = "artikel1";
+
+fetch("https://script.google.com/macros/s/AKfycbznE564a0DyQwF9sPWiOLZ58F81lymklDD-wTcxUkgvUJUEnTfclxk6gJZI-RimUCNI/exec=" + artikelID)
+  .then(res => res.json())
+  .then(data => {
+    const counter = document.querySelector(".artikel-pengunjung p");
+    if(counter) counter.innerText = data.views;
+  });
+
+
+
+  document.querySelectorAll('.go-home').forEach(el => {
+  el.href = window.location.origin;
+});
 </script>
 </body>
 </html>

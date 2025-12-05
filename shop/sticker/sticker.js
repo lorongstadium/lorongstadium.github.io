@@ -267,3 +267,40 @@ slider.addEventListener('touchend', () => {
     slidePrev();
   }
 });
+
+
+
+/* ===== POPUP IMAGE ===== */
+const popup = document.getElementById('popupImgBox');
+const popupImg = document.getElementById('popupImg');
+const closeButton = document.querySelector('.close-popup');
+
+// Klik pada gambar slider
+document.querySelectorAll('.track img').forEach(img => {
+  img.addEventListener('click', () => {
+    popup.style.display = "flex";
+    popupImg.src = img.src;
+    document.body.style.overflow = "hidden"; // lock scroll
+  });
+});
+
+// Tutup popup
+closeButton.addEventListener('click', () => {
+  popup.style.display = "none";
+  document.body.style.overflow = "auto";
+});
+
+// Klik area gelap untuk tutup
+popup.addEventListener('click', (e) => {
+  if (e.target === popup) {
+    popup.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+});
+
+
+
+
+document.querySelectorAll('.go-home').forEach(el => {
+  el.href = window.location.origin;
+});

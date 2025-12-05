@@ -301,7 +301,8 @@ body {
     margin-top: 30px;
     font-size: 17px;
     width: 80%;
-    text-align: center !important;
+    text-align: justify !important;
+    text-align-last: center;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -432,6 +433,7 @@ body {
     width: 90%;
     justify-content: space-between;
     align-items: center;
+    margin-top: -50px;
 }
 
 .price a {
@@ -514,6 +516,10 @@ body {
     .merch-content {
         flex: 0 0 100% !important; 
         height: auto; /* agar tidak kepotong */
+    }
+
+    .price {
+        margin-top: -30px;
     }
 
     .slider-container {
@@ -814,7 +820,7 @@ body {
 
     .artikel-date {
         width: 90%;
-        margin-top: 90px;
+        margin-top: 60px;
         margin-bottom: 20px;
     }
 

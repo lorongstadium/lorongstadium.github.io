@@ -43,3 +43,8 @@ document.querySelector(".close-popup").addEventListener("click", function (e) {
 });
 
 
+
+
+document.querySelectorAll('.go-home').forEach(el => {
+  el.href = window.location.origin;
+});

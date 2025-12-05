@@ -11,13 +11,13 @@
 
     <!-- HEADER -->
 <header class="header">
-    <a href="https://lorongstadium.github.io/index.html" class="logo"><img src="/image/logo.jpg" alt=""></a>
+    <a class="go-home logo"><img src="/image/logo.jpg" alt=""></a>
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <div class="overlay"></div>
     <nav class="navbar">
         <span class="close-btn">&times;</span>
-        <a href="https://lorongstadium.github.io/index.html" class="active">Home</a>
+        <a class="go-home active">Home</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/shop/shop.html">Shop</a>
         <a href="/article/article.html">Article</a>
@@ -39,6 +39,9 @@
 
 <div class="canvas-container">
         <div class="canvas-article">
+            <div class="canvas-article-img">
+                <img src="/image/article/1.png" alt="">
+            </div>
             <h1>September Yang Sangat Amat Jolly</h1>
             <p>
                 Ada yang berbeda dengan September kali ini. Bukan karena daun mulai gugur atau
@@ -82,7 +85,7 @@
                     <div class="quotes-line"></div>
                     <p><i>“Ya, September ini… sangat, amat, dan benar-benar jolly.”</i></p>
                 </div>
-                </br></br>
+                
                 <div class="wm">
                     <i>
                         Ditulis oleh: Ivan
@@ -150,7 +153,7 @@
         <a href="https://x.com/lorongstadium"><i class="fa-brands fa-x-twitter"></i></a>
     </div>
     <div class="footer-tag">
-        <a href="https://lorongstadium.github.io/index.html">Home</a>
+        <a class="go-home">Home</a>
         <a href="/article/article.html">Article</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/contact us/contact us.html">Contact Us</a>
@@ -213,6 +216,12 @@ const menuToggle = document.getElementById("menu-toggle");
             toast.classList.remove("show");
         }, 2000);
     };
+
+
+
+    document.querySelectorAll('.go-home').forEach(el => {
+  el.href = window.location.origin;
+});
 </script>
 </body>
 </html>

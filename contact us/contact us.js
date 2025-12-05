@@ -89,3 +89,9 @@ Terima kasih.`;
         title: "Lokasi Kami"
     });
 }
+
+
+
+document.querySelectorAll('.go-home').forEach(el => {
+  el.href = window.location.origin;
+});

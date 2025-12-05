@@ -11,13 +11,13 @@
 
     <!-- HEADER -->
 <header class="header">
-    <a href="https://lorongstadium.github.io/index.html" class="logo"><img src="/image/logo.jpg" alt=""></a>
+    <a class="go-home logo"><img src="/image/logo.jpg" alt=""></a>
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <div class="overlay"></div>
     <nav class="navbar">
         <span class="close-btn">&times;</span>
-        <a href="https://lorongstadium.github.io/index.html" class="active">Home</a>
+        <a class="go-home active">Home</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/shop/shop.html">Shop</a>
         <a href="/article/article.html">Article</a>
@@ -39,6 +39,9 @@
 
 <div class="canvas-container">
         <div class="canvas-article">
+            <div class="canvas-article-img">
+                <img src="/image/article/2.png" alt="">
+            </div>
             <h1>Membisu</h1>
             <p>
                 Sudah lebih dari 30 hari PSS terdegradasi ke liga 2, namun masih saja berlarut dengan kesedihan.
@@ -61,6 +64,7 @@
                     <div class="quotes-line"></div>
                     <p><i>“Sebenarnya, apasih kerjanya manajemen?”</i></p>
                 </div>
+                
                 <div class="article-last">
                     <p>
                         Musim ke musim yang begitu-begitu saja, menjadikan PSS Sleman hanya sebagai pelengkap di Sepakbola
@@ -77,7 +81,7 @@
                     <div class="quotes-line-1"></div>
                     <p><i>“Sebelum telat, sayang. Kita bisa berubah. Berbuah, sayangku”.</i></p>
                 </div>
-                </br></br>
+                
                 <div class="wm">
                     <i>
                         Ditulis oleh: Ivan
@@ -145,7 +149,7 @@
         <a href="https://x.com/lorongstadium"><i class="fa-brands fa-x-twitter"></i></a>
     </div>
     <div class="footer-tag">
-        <a href="https://lorongstadium.github.io/index.html">Home</a>
+        <a class="go-home">Home</a>
         <a href="/article/article.html">Article</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/contact us/contact us.html">Contact Us</a>
@@ -208,6 +212,12 @@ const menuToggle = document.getElementById("menu-toggle");
             toast.classList.remove("show");
         }, 2000);
     };
+
+
+
+    document.querySelectorAll('.go-home').forEach(el => {
+  el.href = window.location.origin;
+});
 </script>
 </body>
 </html>
