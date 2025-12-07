@@ -6,50 +6,51 @@
     <title>Lorongstadium</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
     <!-- HEADER -->
 <header class="header">
-    <a href="" class="logo"><img src="/image/logo.jpg" alt=""></a>
+    <a class="go-home logo"><img src="/image/logo.jpg" alt=""></a>
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <div class="overlay"></div>
     <nav class="navbar">
         <span class="close-btn">&times;</span>
-        <a href="https://lorongstadium.github.io/index.html" class="active">Home</a>
+        <a class="go-home active">Home</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/shop/shop.html">Shop</a>
         <a href="/article/article.html">Article</a>
         <a href="/gallery/gallery.html">Gallery</a>
+        <a href="/contact us/contact us.html" class="contact">Contact Us</a>
     </nav>
-    <a href="/contact us/contact us.html" class="contact">Contact Us</a>
 </header>
 
 
     <!-- ==== IMAGE SLIDER ==== -->
     <div class="slider">
         <div class="slider-text">
-            <p>Welcome To Our Site</p>
-            <h1>LORONGSTADIUM</h1>
+            <p data-aos="fade-right">Welcome To Our Site</p>
+            <h1 data-aos="fade-left">LORONGSTADIUM</h1>
         </div>
 
-        <div class="slides">
-            <img src="/image/cover/1.png" class="slide active">
-            <img src="/image/cover/2.png" class="slide">
-            <img src="/image/cover/3.png" class="slide">
-            <img src="/image/cover/4.png" class="slide">
-            <img src="/image/cover/5.png" class="slide">
+        <div class="slides" data-aos="fade-up">
+            <img src="/image/cover/1.jpg" class="slide active">
+            <img src="/image/cover/2.jpg" class="slide">
+            <img src="/image/cover/3.jpg" class="slide">
+            <img src="/image/cover/4.jpg" class="slide">
+            <img src="/image/cover/5.jpg" class="slide">
         </div>
     </div>
 
 
     <!-- ==== ABOUT US ==== -->
      <div class="aboutus-container">
-        <div class="aboutus-logo">
+        <div class="aboutus-logo" data-aos="fade-up">
             <img src="/image/logo.jpg" alt="">
         </div>
-        <div class="aboutus-judul">
+        <div class="aboutus-judul" data-aos="fade-up">
             <h1>About Us</h1>
         <p>
             LorongStadium adalah komunitas literasi yang berfokus pada keterkaitan antara sepakbola
@@ -65,12 +66,12 @@
 
      <!-- ==== MERCHANDISE ==== -->
 <div class="merch-container">
-        <h1>Our Shop</h1>
-    <div class="slider-container">
+        <h1 data-aos="fade-up">Our Shop</h1>
+    <div class="slider-container" data-aos="fade-up">
         <div class="slider-track">
             <div class="merch-content">
                 <div class="merch-img">
-                    <img src="/image/shop/flare/1.png" alt="">
+                    <img src="/image/shop/cover/flare.png" alt="">
                 </div>
                 <div class="merch-price">
                     <h1>Red Flare DNS</h1>
@@ -87,7 +88,7 @@
 
             <div class="merch-content">
                 <div class="merch-img">
-                    <img src="/image/shop/tshirt-cfl/1.png" alt="">
+                    <img src="/image/shop/cover/tshirt-cfl.png" alt="">
                 </div>
                 <div class="merch-price">
                     <h1>T-shirt CFL</h1>
@@ -104,7 +105,7 @@
 
             <div class="merch-content">
                 <div class="merch-img">
-                    <img src="/image/shop/sticker-pack/1.png" alt="">
+                    <img src="/image/shop/cover/sticker.png" alt="">
                 </div>
                 <div class="merch-price">
                     <h1>Sticker Pack</h1>
@@ -122,8 +123,8 @@
         </div>
     </div>
     <div class="btn-grup">
-            <button class="btn left" onclick="leftSlide()">&#10094;</button>
-            <button class="btn right" onclick="rightSlide()">&#10095;</button>
+            <button data-aos="fade-right" class="btn left" onclick="leftSlide()">&#10094;</button>
+            <button data-aos="fade-left" class="btn right" onclick="rightSlide()">&#10095;</button>
         </div>
 </div>
 
@@ -132,10 +133,10 @@
     <!-- ==== ARTIKEL ==== -->
     <div class="artikel-container">
         <div class="artikel">
-            <h1>Our Article</h1>
+            <h1 data-aos="fade-up">Our Article</h1>
         </div>
         <div class="artikel-wrap">
-            <div class="artikel-content">
+            <div class="artikel-content" data-aos="fade-up">
                 <div class="artikel-cover">
                     <img src="/image/article/1.png" alt="">
                 </div>
@@ -148,7 +149,7 @@
                     <p>9 Oktober 2025</p>
                     <div class="artikel-pengunjung" data-id="artikel6">
                         <h5><i class="fa-solid fa-eye"></i></h5>
-                        <p>0</p>
+                        <span class="view-count">0</span>
                     </div>
                     <div class="artikel-share">
                         <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
@@ -156,7 +157,7 @@
                     </div>
                 </div>
             </div>
-            <div class="artikel-content">
+            <div class="artikel-content" data-aos="fade-up">
                 <div class="artikel-cover">
                     <img src="/image/article/2.png" alt="">
                 </div>
@@ -168,7 +169,7 @@
                     <p>7 September 2025</p>
                     <div class="artikel-pengunjung" data-id="artikel5">
                         <h5><i class="fa-solid fa-eye"></i></h5>
-                        <p>0</p>
+                        <span class="view-count">0</span>
                     </div>
                     <div class="artikel-share">
                         <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
@@ -176,7 +177,7 @@
                     </div>
                 </div>
             </div>
-            <div class="artikel-content">
+            <div class="artikel-content" data-aos="fade-up">
                 <div class="artikel-cover">
                     <img src="/image/article/3.png" alt="">
                 </div>
@@ -189,7 +190,7 @@
                     <p>25 Juli 2025</p>
                     <div class="artikel-pengunjung" data-id="artikel4">
                         <h5><i class="fa-solid fa-eye"></i></h5>
-                        <p>0</p>
+                        <span class="view-count">0</span>
                     </div>
                     <div class="artikel-share">
                         <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
@@ -201,7 +202,7 @@
         </br>
         </br>
         <div class="artikel-wrap">
-            <div class="artikel-content">
+            <div class="artikel-content" data-aos="fade-up">
                 <div class="artikel-cover">
                     <img src="/image/article/4.png" alt="">
                 </div>
@@ -213,7 +214,7 @@
                     <p>10 Juli 2025</p>
                     <div class="artikel-pengunjung" data-id="artikel3">
                         <h5><i class="fa-solid fa-eye"></i></h5>
-                        <p>0</p>
+                        <span class="view-count">0</span>
                     </div>
                     <div class="artikel-share">
                         <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
@@ -221,7 +222,7 @@
                     </div>
                 </div>
             </div>
-            <div class="artikel-content">
+            <div class="artikel-content" data-aos="fade-up">
                 <div class="artikel-cover">
                     <img src="/image/article/5.png" alt="">
                 </div>
@@ -234,7 +235,7 @@
                     <p>24 Juni 2025</p>
                     <div class="artikel-pengunjung" data-id="artikel2">
                         <h5><i class="fa-solid fa-eye"></i></h5>
-                        <p>0</p>
+                        <span class="view-count">0</span>
                     </div>
                     <div class="artikel-share">
                         <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
@@ -242,7 +243,7 @@
                     </div>
                 </div>
             </div>
-            <div class="artikel-content">
+            <div class="artikel-content" data-aos="fade-up">
                 <div class="artikel-cover">
                     <img src="/image/article/6.png" alt="">
                 </div>
@@ -255,7 +256,7 @@
                     <p>9 Juni 2025</p>
                     <div class="artikel-pengunjung" data-id="artikel1">
                         <h5><i class="fa-solid fa-eye"></i></h5>
-                        <p>0</p>
+                        <span class="view-count">0</span>
                     </div>
                     <div class="artikel-share">
                         <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
@@ -265,7 +266,7 @@
             </div>
         </div>
 
-        <div class="artikel-button">
+        <div class="artikel-button" data-aos="fade-up">
             <a href="/article/article.html"><h2>Read More</h2></a>
         </div>
     </div>
@@ -296,33 +297,33 @@
 
 <!-- ==== GALLERY ==== -->
 <div class="gallery-judul">
-        <h1>Our Gallery</h1>
-<div class="gallery-container">
+        <h1 data-aos="fade-up">Our Gallery</h1>
+<div class="gallery-container" data-aos="fade-up">
     <div class="gallery-wrapper">
         <div class="gallery-content">
 
     <!-- ORIGINAL IMAGES -->
-    <div class="gallery"><img src="/image/gallery/1.png"></div>
-    <div class="gallery"><img src="/image/gallery/2.png"></div>
-    <div class="gallery"><img src="/image/gallery/3.png"></div>
-    <div class="gallery"><img src="/image/gallery/4.png"></div>
-    <div class="gallery"><img src="/image/gallery/5.png"></div>
-    <div class="gallery"><img src="/image/gallery/6.png"></div>
+    <div class="gallery"><img src="/image/gallery/1.jpg"></div>
+    <div class="gallery"><img src="/image/gallery/2.jpg"></div>
+    <div class="gallery"><img src="/image/gallery/3.jpg"></div>
+    <div class="gallery"><img src="/image/gallery/4.jpg"></div>
+    <div class="gallery"><img src="/image/gallery/5.jpg"></div>
+    <div class="gallery"><img src="/image/gallery/6.jpg"></div>
 
     <!-- DUPLICATE (for smooth infinite) -->
-    <div class="gallery"><img src="/image/gallery/1.png"></div>
-    <div class="gallery"><img src="/image/gallery/2.png"></div>
-    <div class="gallery"><img src="/image/gallery/3.png"></div>
-    <div class="gallery"><img src="/image/gallery/4.png"></div>
-    <div class="gallery"><img src="/image/gallery/5.png"></div>
-    <div class="gallery"><img src="/image/gallery/6.png"></div>
+    <div class="gallery"><img src="/image/gallery/1.jpg"></div>
+    <div class="gallery"><img src="/image/gallery/2.jpg"></div>
+    <div class="gallery"><img src="/image/gallery/3.jpg"></div>
+    <div class="gallery"><img src="/image/gallery/4.jpg"></div>
+    <div class="gallery"><img src="/image/gallery/5.jpg"></div>
+    <div class="gallery"><img src="/image/gallery/6.jpg"></div>
 
 </div>
 
     </div>
     <div class="arrow-group">
-        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
-        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+        <button data-aos="fade-right" class="arrow left" onclick="prevSlide()">&#10094;</button>
+        <button data-aos="fade-left" class="arrow right" onclick="nextSlide()">&#10095;</button>
     </div>
 </div>
 </div>
@@ -343,7 +344,7 @@
         <a href="https://x.com/lorongstadium"><i class="fa-brands fa-x-twitter"></i></a>
     </div>
     <div class="footer-tag">
-        <a href="https://lorongstadium.github.io">Home</a>
+        <a class="go-home">Home</a>
         <a href="/article/article.html">Article</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/contact us/contact us.html">Contact Us</a>
@@ -357,6 +358,10 @@
 
 <!-- Font Awesome -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 <script src="script.js"></script>
 </body>

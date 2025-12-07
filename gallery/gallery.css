@@ -111,7 +111,7 @@ body {
 }
 
 /* ====== RESPONSIVE HEADER ====== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     .navbar {
         position: fixed;
@@ -121,6 +121,7 @@ body {
         height: 100vh;
         background: #363062;
         padding-top: 80px;
+        display: flex;
         flex-direction: column;
         gap: 25px;
         transition: 0.3s ease;
@@ -134,11 +135,6 @@ body {
     .navbar a {
         margin: 0;
         font-size: 20px;
-        padding-left: 20px;
-    }
-
-    .contact {
-        display: none;
     }
 
     .menu-icon {
@@ -262,29 +258,24 @@ body {
 }
 
 /* ====== POPUP ====== */
-/* popup overlay */
 .popup {
   position: fixed;
-  inset: 0;                /* top:0; right:0; bottom:0; left:0; */
-  display: none;          /* toggle 'flex' ketika terbuka */
+  inset: 0;                
+  display: none;
   justify-content: center;
   align-items: center;
   background: rgba(0,0,0,0.8);
   z-index: 20000;
 }
 
-/* gambar di dalam popup => jangan pasang pointer-events:none di sini
-   karena kita ingin klik pada gambar tidak menutup popup tetapi
-   klik pada overlay (area selain gambar) akan terdeteksi sebagai target overlay */
 .popup img {
   max-width: 90%;
   max-height: 85vh;
   border-radius: 12px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.6);
-  pointer-events: auto; /* biarkan gambar menerima pointer agar klik pada gambar tidak "bocor" */
+  pointer-events: auto;
 }
 
-/* close button */
 .close-popup {
   position: absolute;
   top: 20px;
@@ -292,13 +283,12 @@ body {
   font-size: 40px;
   color: #fff;
   cursor: pointer;
-  z-index: 1010; /* di atas gambar */
+  z-index: 1010;
   user-select: none;
   pointer-events: auto;
 }
 
-
-/* Gambar otomatis menyesuaikan layar */
+/* ====== RESPONSIVE GALLERY ====== */
 @media (max-width: 900px) {
     .gallery img {
         width: 200px;
@@ -309,11 +299,10 @@ body {
 @media (max-width: 600px) {
     .gallery img {
         width: 70%;
-        height: auto;    /* lebih natural untuk tampilan kecil */
+        height: auto;
         aspect-ratio: 2/3;
     }
 }
-
 
 
 /* ====== FOOTER ====== */

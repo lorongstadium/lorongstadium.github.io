@@ -111,7 +111,7 @@ body {
 }
 
 /* ====== RESPONSIVE HEADER ====== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     .navbar {
         position: fixed;
@@ -121,6 +121,7 @@ body {
         height: 100vh;
         background: #363062;
         padding-top: 80px;
+        display: flex;
         flex-direction: column;
         gap: 25px;
         transition: 0.3s ease;
@@ -134,11 +135,6 @@ body {
     .navbar a {
         margin: 0;
         font-size: 20px;
-        padding-left: 20px;
-    }
-
-    .contact {
-        display: none;
     }
 
     .menu-icon {
@@ -216,6 +212,7 @@ body {
     object-fit: cover;
 }
 
+/* ====== RESPONSIVE COVER IMAGE ====== */
 @media (max-width: 600px) {
     .cover-text h1 {
         font-size: 50px;
@@ -224,7 +221,7 @@ body {
 }
 
 
-/* ====== */
+/* ====== CONTACT ====== */
 .contact-wrap {
     width: 100%;
     overflow-x: hidden !important;
@@ -358,7 +355,7 @@ input, textarea {
 
 input.error, textarea.error {
     border: 2px solid #ff4b4b;
-    background: #3c1f1f;
+    background: #363062;
 }
 
 button {
@@ -377,9 +374,7 @@ button:hover {
     background: #363062;
 }
 
-/* ============================
-   TABLET (max-width: 950px)
-=============================== */
+/* ====== RESPONSIVE CONTACT ====== */
 @media (max-width: 950px) {
 
     .contact-container {
@@ -388,12 +383,10 @@ button:hover {
         gap: 40px;
     }
 
-    /* Contact Icon + Maps jadi full width */
     .contact-icon-maps {
         width: 90%;
     }
 
-    /* ICON lebih kecil */
     .icon {
         width: 300px;
         height: 200px;
@@ -408,14 +401,12 @@ button:hover {
         font-size: 14px;
     }
 
-    /* Maps lebih pas */
     #map {
         width: 90%;
         height: 260px;
         margin-top: 50px;
     }
 
-    /* Contact form turun ke bawah */
     .contact-form {
         width: 90%;
         display: flex;
@@ -428,10 +419,6 @@ button:hover {
     }
 }
 
-
-/* ============================
-   HP (max-width: 600px)
-=============================== */
 @media (max-width: 600px) {
 
     .contact-container {
@@ -439,7 +426,6 @@ button:hover {
         gap: 40px;
     }
 
-    /* ICON jadi lebih kecil lagi agar tetap 2 kolom */
     .icon-wrap {
         gap: 10px;
     }
@@ -460,14 +446,12 @@ button:hover {
         font-size: 10px;
     }
 
-    /* Maps kecil & pas layar */
     #map {
         width: 90%;
         height: 230px;
         margin-top: 50px;
     }
 
-    /* Contact form full width */
     .contact-form {
         width: 90%;
         display: flex;

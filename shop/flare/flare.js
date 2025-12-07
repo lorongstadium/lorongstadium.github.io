@@ -1,3 +1,4 @@
+ // HEADER STICKY
  window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
     if (window.scrollY > 10) {
@@ -7,31 +8,27 @@
     }
 });
 
-/////////
+
+// HEADER RESPONSIVE
 const menuToggle = document.getElementById("menu-toggle");
     const overlay = document.querySelector(".overlay");
     const closeBtn = document.querySelector(".close-btn");
 
-    // klik overlay tutup menu
     overlay.addEventListener("click", () => {
         menuToggle.checked = false;
     });
 
-    // klik tombol silang tutup menu
     closeBtn.addEventListener("click", () => {
         menuToggle.checked = false;
     });
 
 
-
-
-
+// FORM PENDAFTARAN
 const apiProv = "https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json";
 const apiKota = id => `https://www.emsifa.com/api-wilayah-indonesia/api/regencies/${id}.json`;
 const apiKecamatan = id => `https://www.emsifa.com/api-wilayah-indonesia/api/districts/${id}.json`;
 const apiKelurahan = id => `https://www.emsifa.com/api-wilayah-indonesia/api/villages/${id}.json`;
 
-// Ambil Provinsi
 window.onload = () => {
     fetch(apiProv)
         .then(res => res.json())
@@ -45,7 +42,6 @@ window.onload = () => {
         });
 };
 
-// Kota berdasarkan provinsi
 function updateKota() {
     const provSelect = document.getElementById("provinsi");
     const provID = provSelect.options[provSelect.selectedIndex].dataset.id;
@@ -61,7 +57,6 @@ function updateKota() {
         });
 }
 
-// Kecamatan berdasarkan kota
 function updateKecamatan() {
     const kotaSelect = document.getElementById("kota");
     const kotaID = kotaSelect.options[kotaSelect.selectedIndex].dataset.id;
@@ -77,7 +72,6 @@ function updateKecamatan() {
         });
 }
 
-// Kelurahan berdasarkan kecamatan
 function updateKelurahan() {
     const kecSelect = document.getElementById("kecamatan");
     const kecID = kecSelect.options[kecSelect.selectedIndex].dataset.id;
@@ -92,7 +86,6 @@ function updateKelurahan() {
         });
 }
 
-// Hitung harga
 function hitungHarga() {
     const qty = document.getElementById("qty").value;
     const harga = 60000 * qty;
@@ -100,14 +93,10 @@ function hitungHarga() {
 }
 
 
-
-
-
-
+// FORM MESSAGE
 document.getElementById("kirim").addEventListener("click", function(event) {
     event.preventDefault();
 
-    // Semua ID form
     const fields = [
         "nama",
         "telp",
@@ -122,7 +111,6 @@ document.getElementById("kirim").addEventListener("click", function(event) {
 
     let isValid = true;
 
-    // Loop: cek satu-satu
     fields.forEach(id => {
         const el = document.getElementById(id);
 
@@ -134,13 +122,11 @@ document.getElementById("kirim").addEventListener("click", function(event) {
         }
     });
 
-    // Jika ada yang kosong → hentikan
     if (!isValid) {
         alert("Harap isi semua data terlebih dahulu.");
         return;
     }
 
-    // Jika semua terisi → lanjutkan WhatsApp
     const nama = document.getElementById("nama").value;
     const telp = document.getElementById("telp").value;
     const email = document.getElementById("email").value;
@@ -185,11 +171,7 @@ Terima kasih.`;
 });
 
 
-
-
-
-
-
+// IMAGE PRODUCT SLIDER
 const track = document.querySelector('.track');
 const slides = document.querySelectorAll('.track img');
 const slider = document.querySelector('.items-img');
@@ -198,7 +180,6 @@ let index = 0;
 let total = slides.length;
 let width = slider.clientWidth;
 
-// clone (untuk loop mulus)
 slides.forEach(img => {
   const clone = img.cloneNode(true);
   track.appendChild(clone);
@@ -209,8 +190,6 @@ function updateWidth() {
 }
 window.addEventListener('resize', updateWidth);
 
-
-// === NEXT ===
 function slideNext() {
   index++;
   track.style.transition = "transform 0.5s ease";
@@ -225,7 +204,6 @@ function slideNext() {
   }
 }
 
-// === PREV ===
 function slidePrev() {
   if (index === 0) {
     track.style.transition = "none";
@@ -246,8 +224,6 @@ function slidePrev() {
 document.querySelector('.next').onclick = slideNext;
 document.querySelector('.prev').onclick = slidePrev;
 
-
-/* ===== SWIPE (HP / TABLET) ===== */
 let startX = 0;
 let endX = 0;
 
@@ -266,4 +242,36 @@ slider.addEventListener('touchend', () => {
   if (endX - startX > 50) {
     slidePrev();
   }
+});
+
+
+/* ===== POPUP IMAGE ===== */
+const popup = document.getElementById('popupImgBox');
+const popupImg = document.getElementById('popupImg');
+const closeButton = document.querySelector('.close-popup');
+
+document.querySelectorAll('.track img').forEach(img => {
+  img.addEventListener('click', () => {
+    popup.style.display = "flex";
+    popupImg.src = img.src;
+    document.body.style.overflow = "hidden";
+  });
+});
+
+closeButton.addEventListener('click', () => {
+  popup.style.display = "none";
+  document.body.style.overflow = "auto";
+});
+
+popup.addEventListener('click', (e) => {
+  if (e.target === popup) {
+    popup.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+});
+
+
+// AUTO BACK HOME
+document.querySelectorAll('.go-home').forEach(el => {
+  el.href = window.location.origin;
 });

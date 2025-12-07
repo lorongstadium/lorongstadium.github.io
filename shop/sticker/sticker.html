@@ -5,35 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorongstadium</title>
     <link rel="stylesheet" href="sticker.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
     <!-- HEADER -->
 <header class="header">
-    <a href="https://lorongstadium.github.io/index.html" class="logo"><img src="/image/logo.jpg" alt=""></a>
+    <a class="go-home logo"><img src="/image/logo.jpg" alt=""></a>
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <div class="overlay"></div>
     <nav class="navbar">
         <span class="close-btn">&times;</span>
-        <a href="https://lorongstadium.github.io/index.html" class="active">Home</a>
+        <a class="go-home active">Home</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/shop/shop.html">Shop</a>
         <a href="/article/article.html">Article</a>
         <a href="/gallery/gallery.html">Gallery</a>
+        <a href="/contact us/contact us.html" class="contact">Contact Us</a>
     </nav>
-    <a href="/contact us/contact us.html" class="contact">Contact Us</a>
 </header>
 
 
 <!-- ==== COVER ===== -->
 <div class="cover">
     <div class="cover-text">
-        <h1>Shop</h1>
+        <h1  data-aos="fade-right">Shop</h1>
     </div>
-    <div class="cover-img">
-        <img src="/image/shop/shop.png" alt="" srcset="">
+    <div class="cover-img" data-aos="fade-up">
+        <img src="/image/shop/cover/shop.jpg" alt="" srcset="">
     </div>
 </div>
 
@@ -42,27 +43,33 @@
 
         <!-- IMG PRODUCT -->
         <div class="slider-box">
-            <button class="btn prev">‹</button>
-            <div class="items-img">
+            <button  data-aos="fade-right" class="btn prev">‹</button>
+            <div class="items-img"  data-aos="fade-up">
                 <div class="track">
-                    <img src="/image/shop/sticker-pack/1.png" alt="">
-                    <img src="/image/shop/sticker-pack/2.png" alt="">
-                    <img src="/image/shop/sticker-pack/3.png" alt="">
-                    <img src="/image/shop/sticker-pack/4.png" alt="">
-                    <img src="/image/shop/sticker-pack/5.png" alt="">
-                    <img src="/image/shop/sticker-pack/6.png" alt="">
+                    <img src="/image/shop/sticker-pack/1.jpg" alt="">
+                    <img src="/image/shop/sticker-pack/2.jpg" alt="">
+                    <img src="/image/shop/sticker-pack/3.jpg" alt="">
+                    <img src="/image/shop/sticker-pack/4.jpg" alt="">
+                    <img src="/image/shop/sticker-pack/5.jpg" alt="">
+                    <img src="/image/shop/sticker-pack/6.jpg" alt="">
                 </div>
             </div>
-            <button class="btn next">›</button>
+            <button  data-aos="fade-left" class="btn next">›</button>
+        </div>
+
+        <!-- POPUP IMAGE -->
+        <div class="popup-img" id="popupImgBox">
+            <span class="close-popup">&times;</span>
+            <img id="popupImg" src="">
         </div>
 
         <!-- DESK PRODUCT -->
         <div class="items-desk">
-            <div class="items-tittle">
+            <div class="items-tittle"  data-aos="fade-right">
                 <h1>Sticker Pack Lorongstadium</h1>
                 <h4>IDR 15.000</h4>
             </div>
-            <div class="items-spek">
+            <div class="items-spek"  data-aos="fade-right">
                 <p><span class="label">Ready Stock</span><span class="colon">:</span>500 pcs</p>
                 <p><span class="label">Dikirim Dari</span><span class="colon">:</span>Kota Tangerang</p>
                 <p><span class="label">Material</span><span class="colon">:</span>Vinyl Glossy</p>
@@ -70,10 +77,10 @@
                 <p><span class="label">Jumlah</span><span class="colon">:</span>1 Pack isi 5 pcs</p>
                 
             </div>
-            <div class="desk-tittle">
+            <div class="desk-tittle"  data-aos="fade-right">
                 <h1>Deskripsi Produk</h1>
             </div>
-            <div class="desk-produk">
+            <div class="desk-produk"  data-aos="fade-right">
                 <p>
                     Lebih dari sekadar stiker, ini adalah simbol gerakan. Lorongstadium merepresentasikan
                     komunitas supporter sepakbola yang tidak hanya bersuara di tribun, tapi juga bergerak
@@ -117,7 +124,8 @@
 
     <!-- FORM PRODUCT -->
     <div class="form">
-        <div class="container">
+        <h1  data-aos="fade-right">Isi Formulir</h1>
+        <div class="container"  data-aos="fade-up">
         <label>Nama Lengkap</label>
         <input type="text" id="nama"/>
         <label>No Telp</label>
@@ -149,7 +157,7 @@
         <label>Harga</label>
         <input type="text" id="harga" disabled />
 
-        <div class="button">
+        <div class="button"  data-aos="fade-left">
             <a href="#" id="kirim">Beli Sekarang</a>
         </div>
     </div> 
@@ -165,7 +173,7 @@
         <a href="https://x.com/lorongstadium"><i class="fa-brands fa-x-twitter"></i></a>
     </div>
     <div class="footer-tag">
-        <a href="https://lorongstadium.github.io/index.html">Home</a>
+        <a class="go-home">Home</a>
         <a href="/article/article.html">Article</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/contact us/contact us.html">Contact Us</a>
@@ -175,6 +183,11 @@
     </div>
  </div>
 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
  <script src="/shop/sticker/sticker.js"></script>
 
 </body>

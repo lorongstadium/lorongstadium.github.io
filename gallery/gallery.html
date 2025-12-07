@@ -5,34 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorongstadium</title>
     <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
     <!-- HEADER -->
 <header class="header">
-    <a href="https://lorongstadium.github.io/index.html" class="logo"><img src="/image/logo.jpg" alt=""></a>
+    <a class="go-home logo"><img src="/image/logo.jpg" alt=""></a>
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <div class="overlay"></div>
     <nav class="navbar">
         <span class="close-btn">&times;</span>
-        <a href="https://lorongstadium.github.io/index.html" class="active">Home</a>
+        <a class="go-home active">Home</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/shop/shop.html">Shop</a>
         <a href="/article/article.html">Article</a>
         <a href="/gallery/gallery.html">Gallery</a>
+        <a href="/contact us/contact us.html" class="contact">Contact Us</a>
     </nav>
-    <a href="/contact us/contact us.html" class="contact">Contact Us</a>
 </header>
 
 
 <!-- ==== COVER ===== -->
 <div class="cover">
     <div class="cover-text">
-        <h1>Gallery</h1>
+        <h1 data-aos="fade-right">Gallery</h1>
     </div>
-    <div class="cover-img">
+    <div class="cover-img" data-aos="fade-up">
         <img src="/image/article/2.png" alt="" srcset="">
     </div>
 </div>
@@ -40,27 +41,27 @@
 
 <!-- ==== GALLERY ==== -->
 <div class="gallery-judul">
-    <h1>Our Gallery</h1>
+    <h1 data-aos="fade-up">Our Gallery</h1>
 </div>
 
 <div class="gallery-container">
-    <div class="gallery">
-        <img src="/image/gallery/1.png" onclick="openPopup(this.src)">
+    <div class="gallery" data-aos="fade-up">
+        <img src="/image/gallery/1.jpg" onclick="openPopup(this.src)">
     </div>
-    <div class="gallery">
-        <img src="/image/gallery/2.png" onclick="openPopup(this.src)">
+    <div class="gallery" data-aos="fade-up">
+        <img src="/image/gallery/2.jpg" onclick="openPopup(this.src)">
     </div>
-    <div class="gallery">
-        <img src="/image/gallery/3.png" onclick="openPopup(this.src)">
+    <div class="gallery" data-aos="fade-up">
+        <img src="/image/gallery/3.jpg" onclick="openPopup(this.src)">
     </div>
-    <div class="gallery">
-        <img src="/image/gallery/4.png" onclick="openPopup(this.src)">
+    <div class="gallery" data-aos="fade-up">
+        <img src="/image/gallery/4.jpg" onclick="openPopup(this.src)">
     </div>
-    <div class="gallery">
-        <img src="/image/gallery/5.png" onclick="openPopup(this.src)">
+    <div class="gallery" data-aos="fade-up">
+        <img src="/image/gallery/5.jpg" onclick="openPopup(this.src)">
     </div>
-    <div class="gallery">
-        <img src="/image/gallery/6.png" onclick="openPopup(this.src)">
+    <div class="gallery" data-aos="fade-up">
+        <img src="/image/gallery/6.jpg" onclick="openPopup(this.src)">
     </div>
 </div>
 
@@ -79,7 +80,7 @@
         <a href="https://x.com/lorongstadium"><i class="fa-brands fa-x-twitter"></i></a>
     </div>
     <div class="footer-tag">
-        <a href="https://lorongstadium.github.io/index.html">Home</a>
+        <a class="go-home">Home</a>
         <a href="/article/article.html">Article</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/contact us/contact us.html">Contact Us</a>
@@ -89,6 +90,11 @@
     </div>
  </div>
 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
  <script src="gallery.js"></script>
 
 </body>

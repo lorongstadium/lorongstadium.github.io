@@ -5,34 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorongstadium</title>
     <link rel="stylesheet" href="article.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
     <!-- HEADER -->
 <header class="header">
-    <a href="https://lorongstadium.github.io/index.html" class="logo"><img src="/image/logo.jpg" alt=""></a>
+    <a class="go-home logo"><img src="/image/logo.jpg" alt=""></a>
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <div class="overlay"></div>
     <nav class="navbar">
         <span class="close-btn">&times;</span>
-        <a href="https://lorongstadium.github.io/index.html" class="active">Home</a>
+        <a class="go-home active">Home</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/shop/shop.html">Shop</a>
         <a href="/article/article.html">Article</a>
         <a href="/gallery/gallery.html">Gallery</a>
+        <a href="/contact us/contact us.html" class="contact">Contact Us</a>
     </nav>
-    <a href="/contact us/contact us.html" class="contact">Contact Us</a>
 </header>
 
 
 <!-- ==== COVER ===== -->
 <div class="cover">
     <div class="cover-text">
-        <h1>Article</h1>
+        <h1 data-aos="fade-right">Article</h1>
     </div>
-    <div class="cover-img">
+    <div class="cover-img" data-aos="fade-up">
         <img src="/image/article/5.png" alt="" srcset="">
     </div>
 </div>
@@ -41,10 +42,10 @@
 <!-- ==== ARTIKEL ==== -->
     <div class="artikel-container">
         <div class="artikel">
-            <h1>Our Article</h1>
+            <h1 data-aos="fade-up">Our Article</h1>
         </div>
         <div class="artikel-wrap">
-            <div class="artikel-content">
+            <div class="artikel-content" data-aos="fade-up">
                 <div class="artikel-cover">
                     <img src="/image/article/1.png" alt="">
                 </div>
@@ -57,7 +58,7 @@
                     <p>9 Oktober 2025</p>
                     <div class="artikel-pengunjung" data-id="artikel6">
                         <h5><i class="fa-solid fa-eye"></i></h5>
-                        <p>0</p>
+                        <span class="view-count">0</span>
                     </div>
                     <div class="artikel-share">
                         <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
@@ -65,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="artikel-content">
+            <div class="artikel-content" data-aos="fade-up">
                 <div class="artikel-cover">
                     <img src="/image/article/2.png" alt="">
                 </div>
@@ -77,7 +78,7 @@
                     <p>7 September 2025</p>
                     <div class="artikel-pengunjung" data-id="artikel5">
                         <h5><i class="fa-solid fa-eye"></i></h5>
-                        <p>0</p>
+                        <span class="view-count">0</span>
                     </div>
                     <div class="artikel-share">
                         <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
@@ -85,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            <div class="artikel-content">
+            <div class="artikel-content" data-aos="fade-up">
                 <div class="artikel-cover">
                     <img src="/image/article/3.png" alt="">
                 </div>
@@ -98,7 +99,7 @@
                     <p>25 Juli 2025</p>
                     <div class="artikel-pengunjung" data-id="artikel4">
                         <h5><i class="fa-solid fa-eye"></i></h5>
-                        <p>0</p>
+                        <span class="view-count">0</span>
                     </div>
                     <div class="artikel-share">
                         <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
@@ -110,7 +111,7 @@
         </br>
         </br>
         <div class="artikel-wrap">
-            <div class="artikel-content">
+            <div class="artikel-content" data-aos="fade-up">
                 <div class="artikel-cover">
                     <img src="/image/article/4.png" alt="">
                 </div>
@@ -122,7 +123,7 @@
                     <p>10 Juli 2025</p>
                     <div class="artikel-pengunjung" data-id="artikel3">
                         <h5><i class="fa-solid fa-eye"></i></h5>
-                        <p>0</p>
+                        <span class="view-count">0</span>
                     </div>
                     <div class="artikel-share">
                         <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
@@ -130,7 +131,7 @@
                     </div>
                 </div>
             </div>
-            <div class="artikel-content">
+            <div class="artikel-content" data-aos="fade-up">
                 <div class="artikel-cover">
                     <img src="/image/article/5.png" alt="">
                 </div>
@@ -143,7 +144,7 @@
                     <p>24 Juni 2025</p>
                     <div class="artikel-pengunjung" data-id="artikel2">
                         <h5><i class="fa-solid fa-eye"></i></h5>
-                        <p>0</p>
+                        <span class="view-count">0</span>
                     </div>
                     <div class="artikel-share">
                         <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
@@ -151,7 +152,7 @@
                     </div>
                 </div>
             </div>
-            <div class="artikel-content">
+            <div class="artikel-content" data-aos="fade-up">
                 <div class="artikel-cover">
                     <img src="/image/article/6.png" alt="">
                 </div>
@@ -164,7 +165,7 @@
                     <p>9 Juni 2025</p>
                     <div class="artikel-pengunjung" data-id="artikel1">
                         <h5><i class="fa-solid fa-eye"></i></h5>
-                        <p>0</p>
+                        <span class="view-count">0</span>
                     </div>
                     <div class="artikel-share">
                         <h5><i class="fa-solid fa-up-right-from-square"></i></h5>
@@ -176,6 +177,29 @@
         </div>
 
 
+        <!-- ==== POPUP SHARE COVER ==== -->
+<div id="sharePopup" class="share-popup-overlay">
+    <div class="share-popup-box">
+
+        <span id="closePopup" class="share-popup-close">&times;</span>
+
+        <h2>Bagikan Artikel</h2>
+
+        <div class="share-list">
+            <a id="shareWA" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            <a id="shareFB" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a id="shareTW" target="_blank"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+        </div>
+
+        <div class="share-copy">
+            <input type="text" id="shareLink" readonly>
+            <button id="copyBtn">Copy</button>
+        </div>
+
+    </div>
+</div>
+
+
     <!-- ==== FOOTER ==== -->
  <div class="footer-container">
     <div class="footer-icon">
@@ -184,7 +208,7 @@
         <a href="https://x.com/lorongstadium"><i class="fa-brands fa-x-twitter"></i></a>
     </div>
     <div class="footer-tag">
-        <a href="https://lorongstadium.github.io/index.html">Home</a>
+        <a class="go-home">Home</a>
         <a href="/article/article.html">Article</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/contact us/contact us.html">Contact Us</a>
@@ -195,5 +219,9 @@
  </div>
 
  <script src="article.js"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

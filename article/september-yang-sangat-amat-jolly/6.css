@@ -111,7 +111,7 @@ body {
 }
 
 /* ====== RESPONSIVE HEADER ====== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     .navbar {
         position: fixed;
@@ -121,6 +121,7 @@ body {
         height: 100vh;
         background: #363062;
         padding-top: 80px;
+        display: flex;
         flex-direction: column;
         gap: 25px;
         transition: 0.3s ease;
@@ -134,11 +135,6 @@ body {
     .navbar a {
         margin: 0;
         font-size: 20px;
-        padding-left: 20px;
-    }
-
-    .contact {
-        display: none;
     }
 
     .menu-icon {
@@ -231,12 +227,23 @@ body {
     flex-direction: column;
     align-items: center;
     color: #F5F5F5;
+    }
+
+.canvas-article-img {
+    width: 75%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.canvas-article-img img {
+    width: 100%;
+    height: auto;
 }
 
 .canvas-article h1 {
     width: 75%;
     font-size: 30px;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 50px;
     line-height: 40px;
 }
@@ -251,7 +258,7 @@ body {
 .wm {
     width: 75%;
     font-size: 17px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .quotes {
@@ -405,11 +412,11 @@ body {
     }
 
     .quotes-line {
-        height: 20vh;
+        height: 10vh;
     }
 
     .share-box {
-        width: 90%;
+        width: 100%;
         margin: 40px auto;
     }
 
@@ -433,6 +440,17 @@ body {
     .line {
         width: 100%;
     }
+
+    .canvas-article-img {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.canvas-article-img img {
+    width: 100%;
+    height: auto;
+}
 }
 
 

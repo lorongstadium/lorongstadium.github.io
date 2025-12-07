@@ -111,7 +111,7 @@ body {
 }
 
 /* ====== RESPONSIVE HEADER ====== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1025px) {
 
     .navbar {
         position: fixed;
@@ -134,11 +134,6 @@ body {
     .navbar a {
         margin: 0;
         font-size: 20px;
-        padding-left: 20px;
-    }
-
-    .contact {
-        display: none;
     }
 
     .menu-icon {
@@ -249,13 +244,13 @@ body {
 }
 
 .merch-content {
-    flex: 0 0 calc((100% - 40px) / 3); /* 3 card */
+    flex: 0 0 calc((100% - 40px) / 3);
     background-color: #4D4C7D;
     border-radius: 30px;
     height: 420px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* rapi */
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -288,6 +283,7 @@ body {
     width: 90%;
     justify-content: space-between;
     align-items: center;
+    margin-top: -50px;
 }
 
 .price a {
@@ -321,31 +317,28 @@ body {
 }
 
 /* === RESPONSIVE MERCHANDISE === */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1025px) {
     .slider-container {
-        width: 90%; /* lebih fleksibel di layar kecil */
+        width: 90%;
     }
 
     .slider-track {
-        flex-wrap: wrap; /* biar bisa turun ke bawah */
+        flex-wrap: wrap;
         gap: 20px;
-        justify-content: center; /* biar rata tengah */
-        transform: none !important; /* matikan transform slider jika ada JS */
+        justify-content: center;
+        transform: none !important;
     }
 
     .merch-content {
-        flex: 0 0 90%; /* satu card per baris */
-        height: auto; /* biar fleksibel tinggi */
+        flex: 0 0 90%;
+        height: auto;
     }
 
     .price{
         margin-top: -20px;
     }
 
-    
 }
-
-
 
 
 /* ====== FOOTER ====== */

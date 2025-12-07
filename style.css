@@ -112,7 +112,7 @@ body {
 }
 
 /* ====== RESPONSIVE HEADER ====== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     .navbar {
         position: fixed;
@@ -122,6 +122,7 @@ body {
         height: 100vh;
         background: #363062;
         padding-top: 80px;
+        display: flex;
         flex-direction: column;
         gap: 25px;
         transition: 0.3s ease;
@@ -135,11 +136,6 @@ body {
     .navbar a {
         margin: 0;
         font-size: 20px;
-        padding-left: 20px;
-    }
-
-    .contact {
-        display: none;
     }
 
     .menu-icon {
@@ -301,7 +297,8 @@ body {
     margin-top: 30px;
     font-size: 17px;
     width: 80%;
-    text-align: center !important;
+    text-align: justify !important;
+    text-align-last: center;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -393,13 +390,13 @@ body {
 }
 
 .merch-content {
-    flex: 0 0 calc((100% - 40px) / 3); /* 3 card */
+    flex: 0 0 calc((100% - 40px) / 3);
     background-color: #4D4C7D;
     border-radius: 30px;
     height: 420px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* rapi */
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -432,6 +429,7 @@ body {
     width: 90%;
     justify-content: space-between;
     align-items: center;
+    margin-top: -50px;
 }
 
 .price a {
@@ -505,42 +503,83 @@ body {
     right: 100px;
 }
 
-/* =======================
-   RESPONSIVE HP & TABLET
-   ======================= */
-@media (max-width: 768px) {
-
-    /* Hanya tampil 1 card */
-    .merch-content {
-        flex: 0 0 100% !important; 
-        height: auto; /* agar tidak kepotong */
-    }
+/* ====== RESPONSIVE MERCHANDISE ====== */
+@media (max-width: 1024px) {
 
     .slider-container {
-        width: 80%;
-        padding-bottom: 0px; /* beri ruang agar tidak tertutup */
-    }
-
-    /* Button pindah ke bawah */
-    .btn-grup {
-        position: relative;
-        top: auto;
-        transform: none;
-        margin: 8px 0 12px 0;
-        margin-top: 50px;
+        width: 100%;
+        overflow: hidden;
         display: flex;
         justify-content: center;
-        gap: 20px;
+    }
+
+    .slider-track {
+        display: flex;
+        flex-wrap: nowrap !important;
+        padding-left: 7.5vw;
+    }
+
+    .merch-content {
+        flex: 0 0 85vw !important;
+        max-width: 85vw !important;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .price {
+        margin-top: -20px;
+    }
+
+    .btn-grup {
+        position: relative;
+        margin-top: -100px;
+        margin-bottom: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn {
+        margin: 25%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    .slider-container {
         width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
     }
 
-    .btn-grup .btn {
-        position: static !important; /* hilangkan posisi absolute */
+    .slider-track {
+        display: flex;
+        flex-wrap: nowrap !important;
+        padding-left: 7.5vw;
     }
 
-    /* Gambar biar tidak kepotong */
-    .merch-img img {
-        height: 240px;
+    .merch-content {
+        flex: 0 0 85vw !important;
+        max-width: 85vw !important;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .price {
+        margin-top: -20px;
+    }
+
+    .btn-grup {
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn {
+        margin: 20px;
     }
 }
 
@@ -814,7 +853,7 @@ body {
 
     .artikel-date {
         width: 90%;
-        margin-top: 90px;
+        margin-top: 60px;
         margin-bottom: 20px;
     }
 
@@ -1014,7 +1053,7 @@ body {
 }
 
 /* ====== RESPONSIVE GALLERY ====== */
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
 
     .gallery {
         min-width: 100%;

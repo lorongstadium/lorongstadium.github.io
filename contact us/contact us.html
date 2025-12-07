@@ -5,54 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorongstadium</title>
     <link rel="stylesheet" href="contact us.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
     <!-- HEADER -->
 <header class="header">
-    <a href="https://lorongstadium.github.io/index.html" class="logo"><img src="/image/logo.jpg" alt=""></a>
+    <a class="go-home logo"><img src="/image/logo.jpg" alt=""></a>
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <div class="overlay"></div>
     <nav class="navbar">
         <span class="close-btn">&times;</span>
-        <a href="https://lorongstadium.github.io/index.html" class="active">Home</a>
+        <a class="go-home active">Home</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/shop/shop.html">Shop</a>
         <a href="/article/article.html">Article</a>
         <a href="/gallery/gallery.html">Gallery</a>
+        <a href="/contact us/contact us.html" class="contact">Contact Us</a>
     </nav>
-    <a href="/contact us/contact us.html" class="contact">Contact Us</a>
 </header>
 
 
 <!-- ==== COVER ===== -->
 <div class="cover">
     <div class="cover-text">
-        <h1>Contact Us</h1>
+        <h1 data-aos="fade-right">Contact Us</h1>
     </div>
-    <div class="cover-img">
-        <img src="/image/contact us.png" alt="" srcset="">
+    <div class="cover-img" data-aos="fade-up">
+        <img src="/image/contact-us.jpg" alt="" srcset="">
     </div>
 </div>
 
 
 <div class="contact-wrap">
-    <h1>Contact Us</h1>
+    <h1 data-aos="fade-up">Contact Us</h1>
     <div class="contact-container">
         <div class="contact-icon-maps">
             <div class="contact-icon">
             <div class="icon-wrap">
-                <div class="icon">
-                    <a href="">
+                <div class="icon" data-aos="fade-right">
+                    <a href="https://wa.me/6285135056496">
                         <i class="fa-brands fa-square-whatsapp"></i>
                         <h2>WhatsApp</h2>
                         <p>+62 851-7107-0660</p>
                     </a>
                 </div>
-                <div class="icon">
-                    <a href="">
+                <div class="icon" data-aos="fade-left">
+                    <a href="https://ivanfkri76@gmail.com">
                         <i class="fa-solid fa-envelope"></i>
                         <h2>Email</h2>
                         <p>lorongstadium2023@gmail.com</p>
@@ -60,15 +61,15 @@
                 </div>
             </div>
             <div class="icon-wrap">
-                <div class="icon">
-                    <a href="">
+                <div class="icon" data-aos="fade-right">
+                    <a href="https://instagram.com/lorongstadium">
                         <i class="fa-brands fa-square-instagram"></i>
                         <h2>Instagram</h2>
                         <p>@lorongstadium</p>
                     </a>
                 </div>
-                <div class="icon">
-                    <a href="">
+                <div class="icon" data-aos="fade-left">
+                    <a href="https://x.com/lorongstadium">
                         <i class="fa-brands fa-x-twitter"></i>
                         <h2>X</h2>
                         <p>@lorongstadium</p>
@@ -76,7 +77,7 @@
                 </div>
             </div>
         </div>
-            <div class="contact-maps">
+            <div class="contact-maps" data-aos="fade-up">
                 <iframe
                     id="map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.78169528441!2d106.6894318!3d-6.1652157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f87dd119b8a3%3A0x2b6d3a1b93d7c5d0!2sKota%20Tangerang!5e0!3m2!1sid!2sid!4v1234567890"
@@ -111,13 +112,13 @@
 
     <!-- ==== FOOTER ==== -->
  <div class="footer-container">
-    <div class="footer-icon">
+    <div class="footer-icon" data-aos="fade-up">
         <a href="https://instagram.com/lorongstadium"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://ivanfkri76@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         <a href="https://x.com/lorongstadium"><i class="fa-brands fa-x-twitter"></i></a>
     </div>
     <div class="footer-tag">
-        <a href="https://lorongstadium.github.io/index.html">Home</a>
+        <a class="go-home">Home</a>
         <a href="/article/article.html">Article</a>
         <a href="/about us/about us.html">About Us</a>
         <a href="/contact us/contact us.html">Contact Us</a>
@@ -128,7 +129,10 @@
  </div>
 
  <script src="contact us.js"></script>
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
